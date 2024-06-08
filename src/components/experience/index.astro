@@ -1,0 +1,75 @@
+---
+import type { Props } from "./props";
+import IconArrow from "../icons/arrow.astro";
+
+const { dates, title, company, companyUrl, description, technologies, logo } =
+  Astro.props;
+---
+
+<li>
+  <div
+    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:backdrop-blur-sm duration-500"
+  >
+    <div
+      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-neutral-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+    >
+    </div>
+    <header
+      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-neutral-500 sm:col-span-2"
+      aria-label={dates}
+    >
+      <span>{dates}</span>
+    </header>
+    <div class="z-10 sm:col-span-6">
+      <h3 class="font-medium leading-snug text-neutral-200">
+        <div>
+          <a
+            class="inline-flex items-baseline font-medium leading-tight text-neutral-200 hover:text-neutral-300 focus-visible:text-neutral-300 group/link text-base"
+            href={companyUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={title}
+          >
+            <span
+              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+            ></span>
+            <div class="flex gap-x-2 items-center">
+              {
+                logo && (
+                  <img
+                    class="w-8 h-8 rounded bg-neutral-400/10 "
+                    src={logo}
+                    alt={`${company} logo`}
+                  />
+                )
+              }
+              <span
+                >{title} ·
+                <span class="inline-block">
+                  {company}
+                  <IconArrow />
+                </span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </h3>
+      <p class="mt-2 text-sm leading-normal">
+        {description}
+      </p>
+      {
+        technologies.length && (
+          <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+            {technologies.map((technology) => (
+              <li class="mr-1.5 mt-2">
+                <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-neutral-300">
+                  {technology}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </div>
+</li>

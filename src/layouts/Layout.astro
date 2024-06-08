@@ -1,0 +1,47 @@
+---
+import SparklesCore from "../components/SparklesCore.tsx";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body
+    class="bg-black leading-relaxed text-neutral-200 tracking-wide antialiased selection:bg-neutral-300 selection:text-neutral-900 z-10 relative"
+  >
+    <SparklesCore
+      client:idle
+      id="tsparticlesfullpage"
+      background="transparent"
+      minSize={0.6}
+      maxSize={1.4}
+      opacity={0.2}
+      particleDensity={100}
+      className="w-full h-full fixed z-0"
+      particleColor="#FFFFFF"
+    />
+    <slot />
+    <script src="../scripts/main.ts"></script>
+  </body>
+
+  <style is:global>
+    html {
+      font-family: system-ui, sans-serif;
+      background-size: 224px;
+      font-size: 1.125rem;
+    }
+  </style>
+</html>
