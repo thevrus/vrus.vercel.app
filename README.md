@@ -4,7 +4,7 @@
 </h2>
 
 <div align="center">
-  <img alt="Demo" src="./demo/demo.png" />
+  <img alt="Demo" src="./demo/demo.webp" />
   <img alt="Demo" src="./demo/pagespeed-score.png" />
 </div>
 
