@@ -1,27 +1,27 @@
-import IconDribbble from "../components/icons/dribbble.astro";
+import IconTelegram from "../components/icons/telegram.astro"
 import IconGithub from "../components/icons/github.astro";
 import IconLinkedin from "../components/icons/linkedin.astro";
-import IconTwitter from "../components/icons/twitter.astro";
+import IconWhatsapp from "../components/icons/whatsapp.astro";
 
 export const SOCIALS = [
   {
     name: "Github",
-    url: "https://github.com/thevrus",
+    url: "https://github.com/Fidelsalazar",
     icon: IconGithub,
   },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/vrusin/",
+    url: "https://www.linkedin.com/in/fidel-salazar-dev",
     icon: IconLinkedin,
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/rusin_vadim",
-    icon: IconTwitter,
+    name: "Telegram",
+    url: "https://t.me/fidelsalazar",
+    icon: IconTelegram,
   },
   {
-    name: "Dribbble",
-    url: "https://dribbble.com/iamvr",
-    icon: IconDribbble,
+    name: "Whatsapp",
+    url: "https://wa.me/+5363807211",
+    icon: IconWhatsapp,
   },
 ];

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "site": "fidelsalazar",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
