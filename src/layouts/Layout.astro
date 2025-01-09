@@ -17,6 +17,29 @@ const { title } = Astro.props;
     <link rel="icon" type="image/webp" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAOQDaUwb9p9imBv5025lP_86EsGLT2Fvs",
+    authDomain: "portfolio-rcr.firebaseapp.com",
+    projectId: "portfolio-rcr",
+    storageBucket: "portfolio-rcr.firebasestorage.app",
+    messagingSenderId: "206282207709",
+    appId: "1:206282207709:web:82498adcb9b9c642494634",
+    measurementId: "G-M8XW9PKVHN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </head>
 
   <body
