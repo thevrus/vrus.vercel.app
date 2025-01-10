@@ -5,7 +5,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "Ecommerce",
     title: "Shopify",
     company: "FullStack",
-    companyUrl: "https://www.dutch.com",
+    companyUrl: "https://headless.rcrdevelop.com",
     description:
       "Diseño y desarrollo de una solución completa de eCommerce para Dutch Pet utilizando Shopify Storefront API y Admin API. Implementé integraciones avanzadas como ReCharge para suscripciones, y optimicé la experiencia de usuario a través de layouts y flujos pixel-perfect creados en colaboración con el equipo de diseño.",
     technologies: [
@@ -22,7 +22,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "Saas",
     title: "PICPRESS",
     company: "Backend",
-    companyUrl: "https://www.absoluteweb.com",
+    companyUrl: "https://picpress.techcraftpanda.com/",
     description:
       "Desarrollo de una plataforma SaaS que permite a los usuarios personalizar y gestionar contenido visual para impresión. Implementé soluciones con Vue.js y BigCommerce para una experiencia interactiva y altamente funcional.",
     technologies: [
@@ -35,7 +35,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "Template",
     title: "Custom Shopify Theme",
     company: "Frontend",
-    companyUrl: "",
+    companyUrl: "https://store.rcrdevelop.com",
     description:
       "Creación de un tema personalizado para Shopify, optimizado para SEO y alto rendimiento. El proyecto incluyó diseño desde cero con Liquid y Tailwind CSS, priorizando la velocidad de carga y la usabilidad.",
     technologies: ["Shopify", "Liquid", "Tailwind CSS"],
@@ -45,17 +45,17 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "Ecommerce",
     title: "Ecommerce API with Node.js",
     company: "Backend",
-    companyUrl: "",
+    companyUrl: "https://github.com/rcrdevelop/headless",
     description:
       "Desarrollo de un backend escalable para eCommerce que gestiona inventarios, autenticación de usuarios y procesamiento de pedidos. Implementado con Node.js, Express y MongoDB, con soporte para JWT para autenticación segura.",
-    technologies: ["Node.js", "Express", "MongoDB", "JWT"],
+    technologies: ["Nodejs", "MongoDB", "Nuxt"],
     logo: "/logos/nuxt.svg",
   },
   {
     dates: "Plugin",
     title: "WordPress Plugin for Subscriptions",
     company: "Backend",
-    companyUrl: "",
+    companyUrl: "https://github.com/rcrdevelop/plugin-subscription-wordpress-stripe",
     description:
       "Creación de un plugin para WordPress que permite la gestión de contenidos basados en suscripción, con planes personalizables e integración de pagos a través de Stripe.",
     technologies: ["WordPress", "PHP", "Stripe API"],
@@ -65,7 +65,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "Saas",
     title: "Index Context",
     company: "Fullstack",
-    companyUrl: "",
+    companyUrl: "https://github.com/rcrdevelop/index-context",
     description:
       "Diseño y desarrollo de una herramienta SaaS para gestionar informacion compleja de múltiples tiendas en tiempo real. Utilicé Next y Java para la sincronización y Tailwind CSS para una interfaz atractiva y funcional.",
     technologies: ["Next", "Java", "Tailwind CSS", "Openai"],
@@ -75,7 +75,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "CRM",
     title: "Nuxt Admin Dashboard",
     company: "Fullstack",
-    companyUrl: "",
+    companyUrl: "crm.rcrdevelop.com",
     description:
       "Desarrollo de un CRM basado en Nuxt con un panel de administración avanzado, que incluye visualizaciones de datos y gestión de usuarios. El backend fue construido con Node y MySQL, asegurando escalabilidad y rendimiento.",
     technologies: ["Nuxt", "Spring Boot", "MySQL", "Chart.js"],
